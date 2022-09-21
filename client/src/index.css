@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+* {
+	box-sizing: border-box;
+	font-family: "Space Grotesk", sans-serif;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+.container {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px;
+}
+.form {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 20px;
+	width: 100%;
+	margin-bottom: 30px;
+}
+.form input {
+	margin-bottom: 15px;
+	width: 700px;
+	padding: 10px 15px;
+	outline: none;
+	border: 1px solid #ddd;
+}
+.form button {
+	width: 200px;
+	padding: 10px;
+	height: 45px;
+	cursor: pointer;
+	background-color: #333;
+	color: #fff;
+	outline: none;
+	border: none;
+}
+.songs__container,
+.songs__list {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.song__item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: rgb(238, 236, 236);
+	padding: 10px 20px;
+	border-radius: 5px;
+	width: 60%;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+.song__added {
+	width: 100%;
+	padding: 15px;
+	text-align: center;
+	background-color: #333;
+	color: #fff;
+}
+@media screen and (max-width: 768px) {
+	.form input {
+		width: 100%;
+	}
+	.song__item {
+		width: 100%;
+	}
+}
